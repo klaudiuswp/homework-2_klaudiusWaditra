@@ -1,45 +1,13 @@
 import React from 'react';
 
+import HeaderBody from './organisms/HeaderBody.jsx'
+import FooterBody from './organisms/FooterBody.jsx';
+import DescBody from './organisms/DescBody.jsx';
+
 const BodyComponent = () => {
     return (
         <div className='container p-0 mt-4'>
-            <div className='card border-0 shadow-sm bg-secondary-subtle'>
-                <div className='row g-0 d-flex align-items-center'>
-                    <div className='col-md-3 col-lg-2 text-md-center p-2'>
-                        <div className='text-center'>
-                            <img src="/assets/images.jpg" className='img-fluid' width='100px' />
-                        </div>
-                    </div>
-
-                    <div className='col-md-5 text-center text-md-start p-2 border-end'>
-                        <h5 className='mt-3'><b>Hackativ8 Meetup</b></h5>
-                        <div class="row">
-                            <div class="col-4 col-md-5">
-                                <p>Location </p>
-                            </div>
-                            <div class="col-8 col-md-7">
-                                <p> Jakarta, Indonesia</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-5">
-                                <p>Members </p>
-                            </div>
-                            <div class="col-8 col-md-7">
-                                <p> 1,078</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4 col-md-5">
-                                <p>Organizers </p>
-                            </div>
-                            <div class="col-8 col-md-7">
-                                <p> Adhy Wiranata</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HeaderBody/>
 
             <div className='mt-4'>
                 <h4><b>Next Meetup</b></h4>
@@ -102,54 +70,9 @@ const BodyComponent = () => {
                 </div>
             </div>
 
-            <div className='mt-4'>
-                <h4><b>Past Meetups</b></h4>
-            </div>
-
-            <div className='pt-2 mx-5 row g-0 d-flex justify-content-between'>
-                <div className='col-md-4 px-2'>
-                    <div className="card">
-                        <div className="card-header">
-                            27 November 2017
-                        </div>
-                        <div className="card-body">
-                            <p className="card-text">39 JakartaJS April Meetup with <br />kumparan</p>
-                            <p><b>139</b> went View</p>
-                            <a href="#" className="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='col-md-4 px-2'>
-                    <div className="card">
-                        <div className="card-header">
-                            27 November 2017
-                        </div>
-                        <div className="card-body">
-                            <p className="card-text">39 JakartaJS April Meetup with <br />kumparan</p>
-                            <p><b>139</b> went View</p>
-                            <a href="#" className="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                </div>
-                <div className='col-md-4 px-2'>
-                    <div className="card">
-                        <div className="card-header">
-                            27 November 2017
-                        </div>
-                        <div className="card-body">
-                            <p className="card-text">39 JakartaJS April Meetup with <br />kumparan</p>
-                            <p><b>139</b> went View</p>
-                            <a href="#" className="btn btn-secondary">View</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div className="container">
-                <footer className="pt-3 mt-4">
-                    <p className="text-center text-body-secondary">Copyright Hackativ8 2018</p>
-                </footer>
-            </div>
+            <DescBody/>
+            
+            <FooterBody/>
         </div>
     );
 }

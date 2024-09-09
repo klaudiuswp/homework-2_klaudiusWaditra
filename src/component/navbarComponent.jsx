@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from './atoms/Link.jsx';
+
 const NavbarComponent = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,14 +13,15 @@ const NavbarComponent = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Create Meetup</a>
+                            <Link href='#' value='Create Meetup'/>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Explore</a>
+                            <Link href='#' value='Explore'/>
+
                         </li>
                     </ul>
 
-                    <a class="d-flex nav-link text-light">
+                    <a className="d-flex nav-link text-light">
                         <a className="nav-link active" aria-current="page" href="#">Login</a>
                     </a>
                 </div>
