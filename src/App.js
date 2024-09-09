@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      {/* <BodyComponent/> */}
-      {/* <FormLogin/> */}
+      <BodyComponent/>
+      <FormLogin/>
       {/* <PokemonComponent/> */}
       <HeaderFunctionComponent/>
       <hr/>

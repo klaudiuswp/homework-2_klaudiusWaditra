@@ -12,6 +12,7 @@ export default function MainContentFunctionComponent() {
     useEffect(() => {
         getData();
     },[]);
+
     const getData = async () => {
         try {
             const data = await fetch('https://api.currencyfreaks.com/v2.0/rates/latest?apikey=edf181f1cd484136b9cf45ef3e853cd1', {

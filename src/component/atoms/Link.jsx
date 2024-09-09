@@ -4,7 +4,7 @@ export default class Link extends React.Component {
 
     render() {
         return (
-            <a className="nav-link" href={this.props.href}>{this.props.value}</a>
+            <a className={this.props.class} href={this.props.href}>{this.props.value}</a>
         )
     }
 }
